@@ -1,0 +1,8 @@
+{
+    "name": "uthsc/emerald-wp",
+    "description": "A UTHSC WordPress Theme based on Emerald and FoundationPress",
+    "require-dev": {
+        "laravel/homestead": "^4.0"
+    },
+    "require": {}
+}
