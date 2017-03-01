@@ -25,3 +25,8 @@ PHP
 ln -s /home/vagrant/emerald-wp/emerald-wp  /home/vagrant/emerald-wp/public/wp-content/themes/emerald-wp
 #activate theme
 /home/vagrant/bin/wp theme activate emerald-wp
+
+#install and activate plugins
+cd /home/vagrant/emerald-wp/public
+/home/vagrant/bin/wp plugin install breadcrumb-navxt
+/home/vagrant/bin/wp plugin activate breadcrumb-navxt
