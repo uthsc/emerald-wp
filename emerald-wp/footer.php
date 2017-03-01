@@ -11,13 +11,13 @@
 ?>
 
 		</section>
-		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</div>
+    <div id="footer-container">
+      <?php get_template_part('template-parts/uthsc-content-footer') ?>
+
+      <?php do_action( 'foundationpress_before_footer' ); ?>
+      <?php get_template_part('template-parts/uthsc-footer') ?>
+      <?php do_action( 'foundationpress_after_footer' ); ?>
+    </div>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
