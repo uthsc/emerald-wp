@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<options>
+  <plugin name="Breadcrumb NavXT" version="5.6.0">
+    <option name="bmainsite_display"/>
+    <option name="Hmainsite_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hmainsite_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bhome_display">1</option>
+    <option name="Hhome_template">&lt;li&gt;&#13;
+  &lt;a property="item" typeof="WebPage" class="%type%" href="https://uthsc.edu"&gt;&#13;
+    &lt;span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"&gt;&lt;/span&gt;&#13;
+  &lt;/a&gt;&#13;
+  &lt;meta property="position" content="%position%"&gt;&#13;
+  &lt;/span&gt;&#13;
+  &lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&#13;
+  &lt;a property="item" typeof="WebPage" class="%type%" href="/"&gt;&#13;
+    %htitle%&#13;
+  &lt;/a&gt;&#13;
+  &lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&#13;
+&lt;/li&gt;&#13;
+</option>
+    <option name="Hhome_template_no_anchor">&lt;li&gt;&#13;
+  &lt;a property="item" typeof="WebPage" class="%type%" href="https://uthsc.edu"&gt;&#13;
+    &lt;span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"&gt;&lt;/span&gt;&#13;
+  &lt;/a&gt;&#13;
+  &lt;meta property="position" content="%position%"&gt;&#13;
+  &lt;/span&gt;&#13;
+  &lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&#13;
+  &lt;a property="item" typeof="WebPage" class="%type% disabled"&gt;&#13;
+    %htitle%&#13;
+  &lt;/a&gt;&#13;
+&lt;/li&gt;</option>
+    <option name="bblog_display"/>
+    <option name="Hblog_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Hblog_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="hseparator"/>
+    <option name="blimit_title"/>
+    <option name="amax_title_length">20</option>
+    <option name="bcurrent_item_linked"/>
+    <option name="Hpost_page_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/li&gt;</option>
+    <option name="Hpost_page_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="apost_page_root">0</option>
+    <option name="Hpaged_template">&lt;li&gt;&lt;span property="name"&gt;Page %htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="bpaged_display"/>
+    <option name="Hpost_post_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Hpost_post_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="apost_post_root">0</option>
+    <option name="bpost_post_taxonomy_display">1</option>
+    <option name="bpost_post_taxonomy_referer"/>
+    <option name="Spost_post_taxonomy_type">category</option>
+    <option name="Hpost_attachment_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_attachment_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="H404_template">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="S404_title">404</option>
+    <option name="Hsearch_template">&lt;li&gt;&lt;span property="name"&gt;&#13;
+  &lt;a property="item" typeof="WebPage" title="Go to the first page of search results for %title%." href="%link%" class="%type%"&gt;Search results for &amp;#039;%htitle%&amp;#039;&lt;/a&gt;&#13;
+  &lt;/span&gt;&#13;
+  &lt;meta property="position" content="%position%"&gt;&#13;
+&lt;/li&gt;</option>
+    <option name="Hsearch_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;Search results for &amp;#039;%htitle%&amp;#039;&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Htax_post_tag_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% tag archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Htax_post_tag_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Htax_post_format_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Htax_post_format_template_no_anchor">&lt;li&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Hauthor_template">&lt;li&gt;&lt;span property="name"&gt;&lt;a title="Go to the first page of posts by %title%." href="%link%" class="%type%"&gt;Articles by: %htitle%&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;</option>
+    <option name="Hauthor_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;Articles by: %htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Sauthor_name">display_name</option>
+    <option name="Htax_category_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% category archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/li&gt;</option>
+    <option name="Htax_category_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Hdate_template">&lt;li&gt;&#13;
+&lt;a property="item" typeof="WebPage" title="Go to the %title% archives." href="%link%" class="%type%"&gt;&#13;
+&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&#13;
+  &lt;meta property="position" content="%position%"&gt;&#13;
+  &lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&#13;
+&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="Hdate_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+  </plugin>
+</options>
