@@ -62,10 +62,10 @@
             </li>
             <li><a href="/give/"><span aria-hidden="true" class="fa fa-gift"></span> Make a Gift</a></li>
             <li><a href="/admissions/visit-uthsc.php"><span aria-hidden="true" class="fa fa-road"></span> Take a Tour</a></li>
-            <li>
-                <div class="show-for-large">
-                    <?php //include('uthsc-search-form.php'); ?>
-                </div>
+            <li role="menuitem">
+              <div class="show-for-large">
+                <?php get_search_form() ?>
+              </div>
             </li>
         </ul>
     </div>
