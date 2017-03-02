@@ -9,6 +9,7 @@
 
     <div class="row">
         <div class="hide-for-large columns small-collapse">
+          <?php get_search_form() ?>
         </div>
     </div>
 </header>
