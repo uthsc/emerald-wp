@@ -27,16 +27,7 @@
 
   <?php get_template_part('template-parts/uthsc-site-nav'); ?>
   <?php get_template_part('template-parts/uthsc-banner'); ?>
-
-  <nav aria-label="Bread crumbs - you are here:" role="navigation" class="uthsc-breadcrumbs">
-    <div class="row">
-      <ul class="breadcrumbs column">
-          <?php if (function_exists('bcn_display')) {
-              bcn_display();
-          } ?>
-      </ul>
-    </div>
-  </nav>
+  <?php get_template_part('template-parts/uthsc-breadcrumbs'); ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
