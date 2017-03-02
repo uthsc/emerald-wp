@@ -49,6 +49,9 @@
 
 // Tablet and desktop menu
 .top-bar {
+  background-color: $primary-color;
+  padding: 0;
+
   .menu .home a {
     font-size: 1rem;
     color: #B9B9B9;
@@ -57,24 +60,26 @@
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: $white;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
     font-size: 0.8rem;
     line-height: 1;
+    background-color: $primary-color;
 
     &:hover:not(.button) {
-      background-color: #42525D;
+      background: darken($primary-color, 5%);
     }
   }
 
-  .menu .active > a { background-color: lighten($uthsc-green, 10%); }
+  .menu .active > a { background-color: $uthsc-blue; }
+  .menu .current-menu-item > a { background-color: $uthsc-blue; }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { border-right: 1px solid $uthsc-section-nav-border; }
 
-  .dropdown.menu .submenu { border: 0; }
+  .dropdown.menu .submenu { border: 0; background-color: scale-color($primary-color, $lightness: -10%);}
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
