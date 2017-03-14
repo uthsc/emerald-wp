@@ -22,9 +22,8 @@
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-  </div><!--Close off-canvas-content-->
+    <?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 <?php endif; ?>
-
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>

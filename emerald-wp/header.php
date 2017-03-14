@@ -19,9 +19,25 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
-	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<?php endif; ?>
+  <!--******************-->
+  <!--Off canvas wrapper-->
+  <!--******************-->
+<div id="uthsc-off-canvas-wrapper" class="uthsc-off-canvas-wrapper">
+
+<!--	--><?php //if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
+<!--		--><?php //get_template_part( 'template-parts/mobile-off-canvas' ); ?>
+<!--	--><?php //endif; ?>
+  <style>
+    /*off canvas nav heading bg color fix*/
+    .uthsc-off-canvas-menu > ul >li >a {
+      background: #404040;
+    }
+
+    /*off canvas menu icon path fix*/
+    .toggle-slide-right {
+      background-image: url('/wp-content/themes/emerald-wp/assets/images/nav-toggler-right-uthsc-menu.png');
+    }
+  </style>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
@@ -40,19 +56,9 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
       <div class="row">
         <div class="top-bar-left">
-<!--          <ul class="menu">-->
-<!--            <li class="home"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></li>-->
-<!--          </ul>-->
             <?php foundationpress_top_bar(); ?>
 
         </div>
-<!--        <div class="top-bar-right">-->
-<!--            --><?php //foundationpress_top_bar_r(); ?>
-<!---->
-<!--            --><?php //if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-<!--                --><?php //get_template_part( 'template-parts/mobile-top-bar' ); ?>
-<!--            --><?php //endif; ?>
-<!--        </div>-->
       </div>
 
 		</nav>
