@@ -23,8 +23,10 @@ PHP
 /home/vagrant/bin/wp core install --url=homestead.app --title=Homestead --admin_user=homestead --admin_password=secret --admin_email=webmaster@uthsc.edu
 #symlink theme to themes directory
 ln -s /home/vagrant/emerald-wp/emerald-wp  /home/vagrant/emerald-wp/public/wp-content/themes/emerald-wp
+#symlink child theme to themes directory
+ln -s /home/vagrant/emerald-wp/emerald-wp-child-news  /home/vagrant/emerald-wp/public/wp-content/themes/emerald-wp-child-news
 #activate theme
-/home/vagrant/bin/wp theme activate emerald-wp
+/home/vagrant/bin/wp theme activate emerald-wp-child-news
 
 #install and activate plugins
 cd /home/vagrant/emerald-wp/public
