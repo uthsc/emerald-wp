@@ -37,6 +37,10 @@
     .toggle-slide-right {
       background-image: url('/wp-content/themes/emerald-wp/assets/images/nav-toggler-right-uthsc-menu.png');
     }
+
+    .pagination a {
+      font-weight: normal;
+    }
   </style>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
