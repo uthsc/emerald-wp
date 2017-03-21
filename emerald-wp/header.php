@@ -43,6 +43,18 @@
     .pagination a {
       font-weight: normal;
     }
+
+    .blogpost-entry .entry-content figure.post-thumbnail {
+      margin-right:1em;
+    }
+
+    .blogpost-entry header h2 {
+      font-size: 1.7rem;
+    }
+
+    .blogpost-entry header h2 a{
+      font-weight: normal;
+    }
   </style>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
