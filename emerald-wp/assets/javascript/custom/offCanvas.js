@@ -136,7 +136,7 @@ var slideLeftBtn = document.querySelector('#uthsc-off-canvas-button--slide-left'
 
 slideLeftBtn.addEventListener('click', function(e) {
   console.log('clicked');
-  e.preventDefault;
+  e.preventDefault();
   slideLeft.open();
 });
 
@@ -153,6 +153,6 @@ var slideRight = new Menu({
 var slideRightBtn = document.querySelector('#uthsc-off-canvas-button--slide-right');
 
 slideRightBtn.addEventListener('click', function(e) {
-  e.preventDefault;
+  e.preventDefault();
   slideRight.open();
 });
