@@ -177,6 +177,3 @@ if ( ! function_exists( 'people_taxonomy' ) ) {
     add_action( 'init', 'people_taxonomy', 0 );
 
 }
-
-require_once( 'class-uthsc-widget-homepage-categories.php' );
-register_widget('UTHSC_Widget_News_Categories');
