@@ -49,3 +49,11 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
+
+/**
+ * UTHSC Functions.
+ */
+function new_excerpt_more( $more ) {
+    return '&hellip;&nbsp;<a class="read-more" href="'. get_permalink( get_the_ID() ) . '"><strong>' . __('Read&nbsp;More', 'uthsc') . '</strong></a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
