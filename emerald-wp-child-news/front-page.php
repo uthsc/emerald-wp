@@ -18,7 +18,11 @@
 get_header(); ?>
 
     <div id="page" role="main">
-        <article class="main-content">
+      <div class="row">
+
+        <!--Main Content-->
+        <article class="columns medium-push-2 medium-10 large-7">
+          <h1>UTHSC News</h1><hr>
             <?php if ( have_posts() ) : ?>
 
                 <?php /* Start the Loop */ ?>
@@ -37,15 +41,33 @@ get_header(); ?>
                 foundationpress_pagination();
             elseif ( is_paged() ) :
                 ?>
-                <nav id="post-nav">
-                    <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-                    <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-                </nav>
+              <nav id="post-nav">
+                <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+                <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+              </nav>
             <?php endif; ?>
-
         </article>
-        <?php get_sidebar(); ?>
 
+        <!--Left sidebar-->
+        <div class="columns medium-pull-10 small-4 medium-2 large-pull-7 ">
+          <aside class="" id="sticky-sidebar" data-sticky-container>
+            <div class="sticky" data-sticky data-top-anchor="sticky-sidebar" data-btm-anchor="sticky-sidebar-end:top" data-sticky-on="medium">
+                <?php dynamic_sidebar( 'left-sidebar-widgets' ); ?>
+            </div>
+          </aside>
+        </div>
+
+        <!--Right Sidebar-->
+        <div class="columns small-8 medium-11 large-3">
+          <aside class="sidebar" id="sticky-sidebar" data-sticky-container>
+            <div class="sticky" data-sticky data-top-anchor="sticky-sidebar" data-btm-anchor="sticky-sidebar-end:top" data-sticky-on="large">
+              <?php get_sidebar(); ?>
+            </div>
+          </aside>
+        </div>
+
+
+      </div>
     </div>
 
 <?php get_footer();
