@@ -42,7 +42,7 @@ $maincontent-class: 'off-canvas-content';
 @include foundation-dropdown;
 @include foundation-flex-video;
 @include foundation-responsive-embed;
-//@include foundation-label;
+@include foundation-label;
 @include foundation-media-object;
 @include foundation-menu;
 @include foundation-menu-icon;
