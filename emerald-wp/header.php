@@ -49,12 +49,96 @@
     }
 
     .blogpost-entry header h2 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
 
     .blogpost-entry header h2 a{
       font-weight: normal;
     }
+
+    .uthsc_advanced_categories ul{
+      list-style:none;
+      margin-left: 0;
+    }
+    .uthsc_advanced_categories ul li a {
+      font-weight: normal;
+    }
+    .uthsc_advanced_categories h5 {
+      font-size: 1rem;
+    }
+    p.byline.author {
+      display: inline;
+    }
+
+    .post header {
+      margin-bottom: .8em;
+    }
+
+    .post {
+      margin-bottom: 2em;
+    }
+
+
+    .blogpost-entry
+    {
+      position: relative;
+      background:#fff;
+    }
+    .blogpost-entry:before, .blogpost-entry:after
+    {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width:300px;
+      background: #777;
+      -webkit-box-shadow: 0 15px 10px #777;
+      -moz-box-shadow: 0 15px 10px #777;
+      box-shadow: 0 15px 10px #777;
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    .blogpost-entry:after
+    {
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
+
+    .blogpost-entry footer {
+      padding-bottom: .25em;
+      margin-bottom: 2em;
+    }
+
+    .search-label {
+      display:none;
+    }
+
+    .search .search-label {
+      display:inline-block;
+    }
+
+    .widget_twitter_timeline {
+      height:407px;
+    }
+
+    .main-content .sharedaddy ul li a.sd-button {
+      text-decoration: none !important;
+      text-shadow: none !important;
+      background-image: none !important;
+      padding: 1px 8px 0 5px !important;
+    }
+
   </style>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
@@ -64,12 +148,12 @@
   <?php get_template_part('template-parts/uthsc-breadcrumbs'); ?>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</div>
-		</div>
+<!--		<div class="title-bar" data-responsive-toggle="site-navigation">-->
+<!--			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>-->
+<!--			<div class="title-bar-title">-->
+<!--				<a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a>-->
+<!--			</div>-->
+<!--		</div>-->
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
       <div class="row">
