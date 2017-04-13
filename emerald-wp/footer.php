@@ -11,6 +11,7 @@
 ?>
 
 		</section>
+    <div id="sticky-sidebar-end" style="display:block;width:100%;"></div>
     <div id="footer-container">
       <?php get_template_part('template-parts/uthsc-content-footer') ?>
 
