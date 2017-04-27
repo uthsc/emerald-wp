@@ -31,7 +31,9 @@ var PATHS = {
   sass: [
     'assets/components/foundation-sites/scss',
     'assets/components/motion-ui/src',
-    'assets/components/fontawesome/scss',
+    'assets/components/font-awesome/scss',
+    'assets/components/emerald/scss',
+    'assets/components'
   ],
   javascript: [
     'assets/components/what-input/what-input.js',
@@ -166,7 +168,7 @@ gulp.task('javascript', function() {
 // Copy task
 gulp.task('copy', function() {
   // Font Awesome
-  var fontAwesome = gulp.src('assets/components/fontawesome/fonts/**/*.*')
+  var fontAwesome = gulp.src('assets/components/font-awesome/fonts/**/*.*')
       .pipe(gulp.dest('assets/fonts'));
 
   return merge(fontAwesome);

@@ -11,22 +11,20 @@
 ?>
 
 		</section>
-		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</div>
+    <div id="sticky-sidebar-end" style="display:block;width:100%;"></div>
+    <div id="footer-container">
+      <?php get_template_part('template-parts/uthsc-content-footer') ?>
+
+      <?php do_action( 'foundationpress_before_footer' ); ?>
+      <?php get_template_part('template-parts/uthsc-footer') ?>
+      <?php do_action( 'foundationpress_after_footer' ); ?>
+    </div>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-		</div><!-- Close off-canvas wrapper inner -->
-	</div><!-- Close off-canvas wrapper -->
-</div><!-- Close off-canvas content wrapper -->
+    <?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 <?php endif; ?>
-
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
