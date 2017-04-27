@@ -88,50 +88,50 @@ if ( ! function_exists( 'college_taxonomy' ) ) {
 
 }
 
-
-if ( ! function_exists( 'mission_taxonomy' ) ) {
-
-// Register Custom Taxonomy
-    function mission_taxonomy() {
-
-        $labels = array(
-            'name'                       => _x( 'Mission Areas', 'Taxonomy General Name', 'uthsc' ),
-            'singular_name'              => _x( 'Mission', 'Taxonomy Singular Name', 'uthsc' ),
-            'menu_name'                  => __( 'Mission', 'uthsc' ),
-            'all_items'                  => __( 'All Mission Areas', 'uthsc' ),
-            'parent_item'                => __( 'Parent Mission Area', 'uthsc' ),
-            'parent_item_colon'          => __( 'Parent Mission Area:', 'uthsc' ),
-            'new_item_name'              => __( 'New Mission Area Name', 'uthsc' ),
-            'add_new_item'               => __( 'Add New Mission Area', 'uthsc' ),
-            'edit_item'                  => __( 'Edit Mission Area', 'uthsc' ),
-            'update_item'                => __( 'Update Mission Area', 'uthsc' ),
-            'view_item'                  => __( 'View Mission Area', 'uthsc' ),
-            'separate_items_with_commas' => __( 'Separate items with commas', 'uthsc' ),
-            'add_or_remove_items'        => __( 'Add or remove mission area', 'uthsc' ),
-            'choose_from_most_used'      => __( 'Choose from the most used', 'uthsc' ),
-            'popular_items'              => __( 'Popular Items', 'uthsc' ),
-            'search_items'               => __( 'Search Mission Areas', 'uthsc' ),
-            'not_found'                  => __( 'Not Found', 'uthsc' ),
-            'no_terms'                   => __( 'No items', 'uthsc' ),
-            'items_list'                 => __( 'Items list', 'uthsc' ),
-            'items_list_navigation'      => __( 'Items list navigation', 'uthsc' ),
-        );
-        $args = array(
-            'labels'                     => $labels,
-            'hierarchical'               => true,
-            'public'                     => true,
-            'show_ui'                    => true,
-            'show_admin_column'          => true,
-            'show_in_nav_menus'          => true,
-            'show_tagcloud'              => true,
-            'show_in_rest'               => true,
-        );
-        register_taxonomy( 'mission', array( 'post' ), $args );
-
-    }
-    add_action( 'init', 'mission_taxonomy', 0 );
-
-}
+//The default "categories" taxonomy will be used for this
+//if ( ! function_exists( 'mission_taxonomy' ) ) {
+//
+//// Register Custom Taxonomy
+//    function mission_taxonomy() {
+//
+//        $labels = array(
+//            'name'                       => _x( 'Mission Areas', 'Taxonomy General Name', 'uthsc' ),
+//            'singular_name'              => _x( 'Mission', 'Taxonomy Singular Name', 'uthsc' ),
+//            'menu_name'                  => __( 'Mission', 'uthsc' ),
+//            'all_items'                  => __( 'All Mission Areas', 'uthsc' ),
+//            'parent_item'                => __( 'Parent Mission Area', 'uthsc' ),
+//            'parent_item_colon'          => __( 'Parent Mission Area:', 'uthsc' ),
+//            'new_item_name'              => __( 'New Mission Area Name', 'uthsc' ),
+//            'add_new_item'               => __( 'Add New Mission Area', 'uthsc' ),
+//            'edit_item'                  => __( 'Edit Mission Area', 'uthsc' ),
+//            'update_item'                => __( 'Update Mission Area', 'uthsc' ),
+//            'view_item'                  => __( 'View Mission Area', 'uthsc' ),
+//            'separate_items_with_commas' => __( 'Separate items with commas', 'uthsc' ),
+//            'add_or_remove_items'        => __( 'Add or remove mission area', 'uthsc' ),
+//            'choose_from_most_used'      => __( 'Choose from the most used', 'uthsc' ),
+//            'popular_items'              => __( 'Popular Items', 'uthsc' ),
+//            'search_items'               => __( 'Search Mission Areas', 'uthsc' ),
+//            'not_found'                  => __( 'Not Found', 'uthsc' ),
+//            'no_terms'                   => __( 'No items', 'uthsc' ),
+//            'items_list'                 => __( 'Items list', 'uthsc' ),
+//            'items_list_navigation'      => __( 'Items list navigation', 'uthsc' ),
+//        );
+//        $args = array(
+//            'labels'                     => $labels,
+//            'hierarchical'               => true,
+//            'public'                     => true,
+//            'show_ui'                    => true,
+//            'show_admin_column'          => true,
+//            'show_in_nav_menus'          => true,
+//            'show_tagcloud'              => true,
+//            'show_in_rest'               => true,
+//        );
+//        register_taxonomy( 'mission', array( 'post' ), $args );
+//
+//    }
+//    add_action( 'init', 'mission_taxonomy', 0 );
+//
+//}
 
 
 if ( ! function_exists( 'people_taxonomy' ) ) {
