@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="row">
 
       <!--Main Content-->
-      <article class="columns medium-push-2 medium-10 large-7 main-content">
+      <article class="columns medium-push-2 medium-10 large-7">
         <h1><?php the_archive_title(); ?></h1><hr>
           <?php if (have_posts()) : ?>
               <?php /* Start the Loop */ ?>
