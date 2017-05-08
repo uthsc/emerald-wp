@@ -8,7 +8,23 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+
+<?php
+  //if 'show hero' image has been selected
+  if ( get_field('uthsc_show_post_hero_image', $post_id) ) {
+    //if a hero image has been uploaded
+    $hero_img = get_field('uthsc_post_hero_image');
+    if ( !empty( $hero_img ) ){
+
+        //load the post hero image
+        get_template_part('template-parts/uthsc-post-hero');
+    }
+    else {
+        //otherwise load the featured image
+        get_template_part('template-parts/featured-image');
+    }
+  }
+?>
 
 <div id="single-post" role="main" class="row">
 
