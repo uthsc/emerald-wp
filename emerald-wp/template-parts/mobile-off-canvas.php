@@ -62,36 +62,36 @@
   <div class="mission-links">
     <h2 class="link-heading">Mission</h2>
 
-    <a href="http://uthsc.edu/education/"><span class="uthsc-fa-centered fa fa-graduation-cap" aria-hidden="true"></span>&emsp;Academics</a>
-    <a href="http://uthsc.edu/research"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
-    <a href="http://uthsc.edu/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit" aria-hidden="true"></span>&emsp;Clinical Care</a>
-    <a href="http://uthsc.edu/publicservice/"><span class="uthsc-fa-centered fa fa-globe" aria-hidden="true"></span>&emsp;Public Service</a>
+    <a href="https://uthsc.edu/education/"><span class="uthsc-fa-centered fa fa-graduation-cap" aria-hidden="true"></span>&emsp;Academics</a>
+    <a href="https://uthsc.edu/research"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
+    <a href="https://uthsc.edu/clinical-care/"><span class="uthsc-fa-centered fa fa-medkit" aria-hidden="true"></span>&emsp;Clinical Care</a>
+    <a href="https://uthsc.edu/public-service/"><span class="uthsc-fa-centered fa fa-globe" aria-hidden="true"></span>&emsp;Public Service</a>
   </div>
 
-  <a href="http://uthsc.edu/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
-  <a href="http://uthsc.edu/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
+  <a href="https://uthsc.edu/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+  <a href="https://uthsc.edu/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
   <ul>
     <li><span class="link-heading">Information for...</span>
       <ul>
-        <li><a href="http://uthsc.edu/students/">Students</a></li>
-        <li><a href="http://uthsc.edu/faculty/">Faculty &amp; Staff</a></li>
-        <li><a href="http://uthsc.edu/alumni/">Alumni</a></li>
-        <li><a href="http://uthsc.edu/visitors/">Visitors</a></li>
-        <li><a href="http://uthsc.edu/clinicalcare/">Patients</a></li>
+        <li><a href="https://uthsc.edu/students/">Students</a></li>
+        <li><a href="https://uthsc.edu/faculty/">Faculty &amp; Staff</a></li>
+        <li><a href="https://uthsc.edu/alumni/">Alumni</a></li>
+        <li><a href="https://uthsc.edu/visitors/">Visitors</a></li>
+        <li><a href="https://uthsc.edu/clinical-care/">Patients</a></li>
       </ul>
     </li>
     <li><span class="link-heading">Resources</span>
       <ul>
-        <li><a href="http://uthsc.edu/banner/info/">Banner</a></li>
-        <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+        <li><a href="https://uthsc.edu/banner/info/">Banner</a></li>
+        <li><a href="https://courses.uthsc.edu/">Blackboard</a></li>
         <li><a href="http://events.uthsc.edu/">Calendar</a></li>
-        <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
-        <li><a href="http://uthsc.edu/ilogin/">iLogin</a></li>
-        <li><a href="http://library.uthsc.edu/">Library</a></li>
-        <li><a href="http://uthsc.edu/map/">Maps</a></li>
-        <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
-        <li><a href="http://news.uthsc.edu/">News</a></li>
+        <li><a href="https://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+        <li><a href="https://uthsc.edu/ilogin/">iLogin</a></li>
+        <li><a href="https://library.uthsc.edu/">Library</a></li>
+        <li><a href="https://uthsc.edu/map/">Maps</a></li>
+        <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
+        <li><a href="https://news.uthsc.edu/">News</a></li>
         <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
       </ul>
     </li>

@@ -5,16 +5,16 @@
     <div class="row uthsc-copy-block text-center medium-text-left collapse medium-uncollapse">
         <div class="columns small-6 medium-3 text-right" aria-label="UTHSC links">
             <ul>
-                <li><a href="http://uthsc.edu/give/">Give</a></li>
-                <li><a href="http://uthsc.edu/hr/employment">Employment</a></li>
-                <li><a href="http://uthsc.edu/contacts/">Contact</a></li>
+                <li><a href="https://uthsc.edu/give/">Give</a></li>
+                <li><a href="https://uthsc.edu/hr/employment">Employment</a></li>
+                <li><a href="https://uthsc.edu/contacts/">Contact</a></li>
             </ul>
         </div>
         <div class="columns small-6 medium-3 text-left" aria-label="UTHSC links">
             <ul>
-                <li><a href="http://uthsc.edu/compliance/">Privacy Policy</a></li>
-                <li><a href="http://uthsc.edu/policies/">Policies</a></li>
-                <li><a href="http://uthsc.edu/students/consumer_info.php">Online Disclosure Statement</a></li>
+                <li><a href="https://uthsc.edu/compliance/">Privacy Policy</a></li>
+                <li><a href="https://uthsc.edu/policies/">Policies</a></li>
+                <li><a href="https://uthsc.edu/students/consumer_info.php">Online Disclosure Statement</a></li>
             </ul>
         </div>
         <div class="columns medium-5" aria-label="UTHSC contact information">
@@ -59,7 +59,7 @@
         <!--Edit Password-->
         <!--*************-->
         <div class="columns medium-3 medium-pull-3">
-            <a href="http://uthsc.edu/password/" class="button expanded uthsc-footer-button">
+            <a href="https://uthsc.edu/password/" class="button expanded uthsc-footer-button">
                 <div class="row collapse">
                     <div class="columns small-5 text-right">
                         <p><span class="fa fa-key fa-3x" aria-hidden="true"></span>&emsp;</p>
@@ -123,7 +123,7 @@
         <!--Desktop Emergency Numbers Link-->
         <div class="row collapse show-for-medium">
             <div id="uthsc-emergency-desktop" class="medium-5 medium-centered columns">
-                <a href="http://uthsc.edu/univheal/emergencies.php" class="alert button expanded">
+                <a href="https://uthsc.edu/univheal/emergencies.php" class="alert button expanded">
                     <div class="row">
                         <div class="columns large-5 medium-4 text-right">
                             <span class="fa fa-phone fa-flip-horizontal fa-3x" aria-hidden="true"></span>
