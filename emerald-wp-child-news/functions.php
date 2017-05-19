@@ -212,3 +212,87 @@ function wpufe_javascript() {
     }
 }
 add_action( 'wp_footer', 'wpufe_javascript',20 );
+
+
+add_filter( 'img_caption_shortcode', 'my_img_caption_shortcode', 99, 3 );
+function my_img_caption_shortcode( $empty, $attr, $content ){
+    $attr = shortcode_atts( array(
+        'id'      => '',
+        'align'   => 'alignnone',
+        'width'   => '',
+        'caption' => ''
+    ), $attr );
+
+    if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
+        return '';
+    }
+
+    if ( $attr['id'] ) {
+        $attr['id'] = 'id="' . esc_attr( $attr['id'] ) . '" ';
+    }
+
+    $width = $attr['width'];
+
+    $widthClass='';
+    if     ($width <= 288) { $widthClass = "uthsc-figure-30"; }
+    elseif ($width <= 384) { $widthClass = "uthsc-figure-40"; }
+    elseif ($width <= 480) { $widthClass = "uthsc-figure-50"; }
+    elseif ($width <= 500) { $widthClass = "uthsc-figure-60"; }
+
+
+    return '<figure ' . $attr['id']
+        . 'class="uthsc-figure ' . str_replace('align', '', esc_attr( $attr['align'] )) . ' ' . $widthClass . '" >'
+        . do_shortcode( $content )
+        . '<figcaption class="">' . $attr['caption'] . '</figcaption>'
+        . '</figure>';
+}
+
+function get_uthsc_orbit_slider() {
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    if ($paged < 2) {
+
+        // args
+        $args = array(
+            'posts_per_page' => 4,
+            'meta_query' => array(
+                array(
+                    'key' => 'add_to_slider', // name of custom field
+                    'value' => '"Add To Slider"', // matches exaclty "red", not just red. This prevents a match for "acquired"
+                    'compare' => 'LIKE'
+                )
+            )
+        );
+
+        // get results
+        $the_query = new WP_Query( $args );
+
+        // The Loop
+        if( $the_query->have_posts() ): ?>
+          <div class="hide-for-small-down">
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+              <ul class="orbit-container">
+                  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    <li class="orbit-slide">
+                      <a href="<?php echo get_the_permalink(get_the_id())?>">
+                        <img class="orbit-image" src="<?php echo get_field('slider_image',get_the_id())?>" alt="slider-image" />
+                      </a>
+                      <div class="orbit-caption">
+                        <a href="<?php echo get_the_permalink(get_the_id())?>" style="color:#fff;"><?php echo get_the_title( get_the_id() ) ?></a>
+                      </div>
+                    </li>
+                  <?php endwhile; ?>
+              </ul>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+            <?php
+        endif;
+        wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+    <?php }
+}

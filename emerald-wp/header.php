@@ -78,46 +78,10 @@
       margin-bottom: 2em;
     }
 
-
     .blogpost-entry
     {
       position: relative;
       background:#fff;
-    }
-    .blogpost-entry:before, .blogpost-entry:after
-    {
-      z-index: -1;
-      position: absolute;
-      content: "";
-      bottom: 15px;
-      left: 10px;
-      width: 50%;
-      top: 80%;
-      max-width:300px;
-      background: #777;
-      -webkit-box-shadow: 0 15px 10px #777;
-      -moz-box-shadow: 0 15px 10px #777;
-      box-shadow: 0 15px 10px #777;
-      -webkit-transform: rotate(-3deg);
-      -moz-transform: rotate(-3deg);
-      -o-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-    }
-    .blogpost-entry:after
-    {
-      -webkit-transform: rotate(3deg);
-      -moz-transform: rotate(3deg);
-      -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-      transform: rotate(3deg);
-      right: 10px;
-      left: auto;
-    }
-
-    .blogpost-entry footer {
-      padding-bottom: .25em;
-      margin-bottom: 2em;
     }
 
     .search-label {
@@ -130,6 +94,7 @@
 
     .widget_twitter_timeline {
       height:407px;
+      margin-bottom: 1em;
     }
 
     .main-content .sharedaddy ul li a.sd-button {

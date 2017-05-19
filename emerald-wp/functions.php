@@ -54,6 +54,12 @@ require_once( 'library/responsive-images.php' );
  * UTHSC Functions.
  */
 function new_excerpt_more( $more ) {
-    return '&hellip;&nbsp;<a class="read-more" href="'. get_permalink( get_the_ID() ) . '"><strong>' . __('Read&nbsp;More', 'uthsc') . '</strong></a>';
+    $post_link = get_permalink( get_the_ID() );
+
+    if ( get_post_type(get_the_ID()) == 'news_notes') {
+        $post_link = get_field('in_the_media_url', get_the_ID());
+    };
+
+    return '&hellip;&nbsp;<a class="read-more" href="'. $post_link . '"><strong>' . __('Read&nbsp;More', 'uthsc') . '</strong></a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );

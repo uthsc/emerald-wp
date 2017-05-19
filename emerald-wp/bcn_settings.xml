@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <options>
-  <plugin name="Breadcrumb NavXT" version="5.6.0">
-    <option name="bmainsite_display"/>
+  <plugin name="Breadcrumb NavXT" version="5.7.0">
+    <option name="bmainsite_display"></option>
     <option name="Hmainsite_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
     <option name="Hmainsite_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
     <option name="bhome_display">1</option>
@@ -29,26 +29,26 @@
     %htitle%&#13;
   &lt;/a&gt;&#13;
 &lt;/li&gt;</option>
-    <option name="bblog_display"/>
+    <option name="bblog_display"></option>
     <option name="Hblog_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="Hblog_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
-    <option name="hseparator"/>
-    <option name="blimit_title"/>
+    <option name="hseparator"></option>
+    <option name="blimit_title"></option>
     <option name="amax_title_length">20</option>
-    <option name="bcurrent_item_linked"/>
+    <option name="bcurrent_item_linked"></option>
     <option name="Hpost_page_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/li&gt;</option>
     <option name="Hpost_page_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="apost_page_root">0</option>
     <option name="Hpaged_template">&lt;li&gt;&lt;span property="name"&gt;Page %htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
-    <option name="bpaged_display"/>
+    <option name="bpaged_display"></option>
     <option name="Hpost_post_template">&lt;li&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="Hpost_post_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="apost_post_root">0</option>
     <option name="bpost_post_taxonomy_display">1</option>
-    <option name="bpost_post_taxonomy_referer"/>
+    <option name="bpost_post_taxonomy_referer"></option>
     <option name="Spost_post_taxonomy_type">category</option>
     <option name="Hpost_attachment_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
-    <option name="Hpost_attachment_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_attachment_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="H404_template">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="S404_title">404</option>
     <option name="Hsearch_template">&lt;li&gt;&lt;span property="name"&gt;&#13;
@@ -73,5 +73,95 @@
   &lt;span class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&#13;
 &lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
     <option name="Hdate_template_no_anchor">&lt;li&gt;&lt;span property="name" class="disabled"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="bpost_spotlight_taxonomy_referer"></option>
+    <option name="Hpost_spotlight_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_spotlight_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="bpost_spotlight_archive_display">1</option>
+    <option name="apost_spotlight_root">0</option>
+    <option name="bpost_spotlight_taxonomy_display">1</option>
+    <option name="Spost_spotlight_taxonomy_type">category</option>
+    <option name="bpost_acf_taxonomy_referer"></option>
+    <option name="Hpost_acf_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_acf_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_acf_archive_display"></option>
+    <option name="apost_acf_root">0</option>
+    <option name="bpost_acf_taxonomy_display"></option>
+    <option name="Spost_acf_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_wpuf_subscription_taxonomy_referer"></option>
+    <option name="Hpost_wpuf_subscription_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_wpuf_subscription_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_wpuf_subscription_archive_display"></option>
+    <option name="apost_wpuf_subscription_root">0</option>
+    <option name="bpost_wpuf_subscription_taxonomy_display"></option>
+    <option name="Spost_wpuf_subscription_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_wpuf_forms_taxonomy_referer"></option>
+    <option name="Hpost_wpuf_forms_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_wpuf_forms_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_wpuf_forms_archive_display"></option>
+    <option name="apost_wpuf_forms_root">0</option>
+    <option name="bpost_wpuf_forms_taxonomy_display"></option>
+    <option name="Spost_wpuf_forms_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_wpuf_profile_taxonomy_referer"></option>
+    <option name="Hpost_wpuf_profile_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_wpuf_profile_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_wpuf_profile_archive_display"></option>
+    <option name="apost_wpuf_profile_root">0</option>
+    <option name="bpost_wpuf_profile_taxonomy_display"></option>
+    <option name="Spost_wpuf_profile_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_wpuf_input_taxonomy_referer"></option>
+    <option name="Hpost_wpuf_input_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_wpuf_input_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_wpuf_input_archive_display"></option>
+    <option name="apost_wpuf_input_root">0</option>
+    <option name="bpost_wpuf_input_taxonomy_display"></option>
+    <option name="Spost_wpuf_input_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_wpuf_coupon_taxonomy_referer"></option>
+    <option name="Hpost_wpuf_coupon_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_wpuf_coupon_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_wpuf_coupon_archive_display"></option>
+    <option name="apost_wpuf_coupon_root">0</option>
+    <option name="bpost_wpuf_coupon_taxonomy_display"></option>
+    <option name="Spost_wpuf_coupon_taxonomy_type">BCN_DATE</option>
+    <option name="bpost_announcement_taxonomy_referer"></option>
+    <option name="Hpost_announcement_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_announcement_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="bpost_announcement_archive_display">1</option>
+    <option name="apost_announcement_root">0</option>
+    <option name="bpost_announcement_taxonomy_display">1</option>
+    <option name="Spost_announcement_taxonomy_type">listserv</option>
+    <option name="bpost_news_notes_taxonomy_referer"></option>
+    <option name="Hpost_news_notes_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_news_notes_template_no_anchor">&lt;li class="disabled"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/li&gt;</option>
+    <option name="bpost_news_notes_archive_display">1</option>
+    <option name="apost_news_notes_root">0</option>
+    <option name="bpost_news_notes_taxonomy_display">1</option>
+    <option name="Spost_news_notes_taxonomy_type">media_note_publisher</option>
+    <option name="bpost_dashboard-note_taxonomy_referer"></option>
+    <option name="Hpost_dashboard-note_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to %title%." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Hpost_dashboard-note_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="bpost_dashboard-note_archive_display"></option>
+    <option name="apost_dashboard-note_root">0</option>
+    <option name="bpost_dashboard-note_taxonomy_display"></option>
+    <option name="Spost_dashboard-note_taxonomy_type">BCN_DATE</option>
+    <option name="Htax_listserv_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% Listserv archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_listserv_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_media_note_publisher_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% Publisher archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_media_note_publisher_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_in-the-media-tags_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% In the Media Tag archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_in-the-media-tags_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_campus_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% Campus archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_campus_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_college_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% College archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_college_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_people_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% People archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_people_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_post_status_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title%  archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_post_status_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_ef_editorial_meta_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% Editorial Metadata archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_ef_editorial_meta_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_following_users_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title%  archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_following_users_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_ef_usergroup_template">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;a property="item" typeof="WebPage" title="Go to the %title% Tag archives." href="%link%" class="%type%"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;/a&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
+    <option name="Htax_ef_usergroup_template_no_anchor">&lt;span property="itemListElement" typeof="ListItem"&gt;&lt;span property="name"&gt;%htitle%&lt;/span&gt;&lt;meta property="position" content="%position%"&gt;&lt;/span&gt;</option>
   </plugin>
 </options>
