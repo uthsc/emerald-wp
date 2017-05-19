@@ -212,3 +212,36 @@ function wpufe_javascript() {
     }
 }
 add_action( 'wp_footer', 'wpufe_javascript',20 );
+
+
+add_filter( 'img_caption_shortcode', 'my_img_caption_shortcode', 99, 3 );
+function my_img_caption_shortcode( $empty, $attr, $content ){
+    $attr = shortcode_atts( array(
+        'id'      => '',
+        'align'   => 'alignnone',
+        'width'   => '',
+        'caption' => ''
+    ), $attr );
+
+    if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
+        return '';
+    }
+
+    if ( $attr['id'] ) {
+        $attr['id'] = 'id="' . esc_attr( $attr['id'] ) . '" ';
+    }
+
+    $width = $attr['width'];
+
+    $widthClass='';
+    if     ($width <= 288) { $widthClass = "uthsc-figure-30"; }
+    elseif ($width <= 384) { $widthClass = "uthsc-figure-40"; }
+    elseif ($width <= 480) { $widthClass = "uthsc-figure-50"; }
+    elseif ($width <= 500) { $widthClass = "uthsc-figure-60"; }
+
+    return '<figure ' . $attr['id']
+        . 'class="uthsc-figure ' . str_replace('align', '', esc_attr( $attr['align'] )) . ' ' . $widthClass . '" >'
+        . do_shortcode( $content )
+        . '<figcaption class="">' . $attr['caption'] . '</figcaption>'
+        . '</figure>';
+}
