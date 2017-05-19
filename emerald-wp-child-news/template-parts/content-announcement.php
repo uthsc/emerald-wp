@@ -23,4 +23,5 @@
         <p class="entry-tags"><?php  echo get_the_term_list(get_the_ID(),'listserv', 'Sent to:&nbsp;', ', ') ?></p>
         <?php edit_post_link('Edit this Announcement','',''); ?>
     </footer>
+  <hr />
 </div>

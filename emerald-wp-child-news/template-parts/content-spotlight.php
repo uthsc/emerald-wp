@@ -35,4 +35,5 @@
   <footer>
       <?php edit_post_link('Edit Post','',''); ?>
   </footer>
+  <hr>
 </div>
