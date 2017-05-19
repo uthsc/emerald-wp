@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/redesign/research/">
+                        <a href="http://uthsc.edu/research/">
                             <span aria-hidden="true" class="fa fa-flask"></span>
                             Research
                         </a>
@@ -54,7 +54,7 @@
                     <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
                     <li><a href="http://uthsc.edu/ilogin/">iLogin</a></li>
                     <li><a href="http://library.uthsc.edu/">Library</a></li>
-                    <li><a href="/redesign/map/">Maps</a></li>
+                    <li><a href="http://uthsc.edu/map/">Maps</a></li>
                     <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
                     <li><a href="https://news.uthsc.edu/">News</a></li>
                     <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
