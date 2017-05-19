@@ -39,6 +39,9 @@
     .toggle-slide-right {
       background-image: url('/wp-content/themes/emerald-wp/assets/images/nav-toggler-right-uthsc-menu.png');
     }
+    .toggle-slide-left {
+      background-image: url('/wp-content/themes/emerald-wp/assets/images/nav-toggler-left-site.png');
+    }
 
     .pagination a {
       font-weight: normal;

@@ -119,7 +119,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-  <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('/-resources/2015/images/section-button-images/nav-toggler-left-home-page.png');"></button>
+  <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button"></button>
   <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
   <!--Safari bottom nav fix-->
