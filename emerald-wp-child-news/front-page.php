@@ -23,6 +23,9 @@ get_header(); ?>
         <!--Main Content-->
         <article class="columns medium-push-2 medium-10 large-7">
           <h1>UTHSC News</h1><hr>
+
+<!--            --><?php //get_uthsc_orbit_slider() ?>
+
             <?php if ( have_posts() ) : ?>
 
                 <?php /* Start the Loop */ ?>
