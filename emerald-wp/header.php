@@ -84,41 +84,6 @@
       position: relative;
       background:#fff;
     }
-    .blogpost-entry:before, .blogpost-entry:after
-    {
-      z-index: -1;
-      position: absolute;
-      content: "";
-      bottom: 10px;
-      left: 10px;
-      width: 50%;
-      top: 80%;
-      max-width:300px;
-      background: #ddd;
-      -webkit-box-shadow: 0 10px 10px #ddd;
-      -moz-box-shadow: 0 10px 10px #ddd;
-      box-shadow: 0 10px 10px #ddd;
-      -webkit-transform: rotate(-3deg);
-      -moz-transform: rotate(-3deg);
-      -o-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-    }
-    .blogpost-entry:after
-    {
-      -webkit-transform: rotate(3deg);
-      -moz-transform: rotate(3deg);
-      -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-      transform: rotate(3deg);
-      right: 10px;
-      left: auto;
-    }
-
-    .blogpost-entry footer {
-      padding-bottom: .25em;
-      margin-bottom: 2em;
-    }
 
     .search-label {
       display:none;
