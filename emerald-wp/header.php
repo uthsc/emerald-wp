@@ -78,7 +78,6 @@
       margin-bottom: 2em;
     }
 
-
     .blogpost-entry
     {
       position: relative;
@@ -95,6 +94,7 @@
 
     .widget_twitter_timeline {
       height:407px;
+      margin-bottom: 1em;
     }
 
     .main-content .sharedaddy ul li a.sd-button {
